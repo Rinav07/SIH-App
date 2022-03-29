@@ -281,7 +281,56 @@ class _SearchpageState extends State<Searchpage> {
                             ],
                           ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    child: const Text(
+                                      'Measures Adopted by Coal India Ltd and Substituted',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.5,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
 
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),

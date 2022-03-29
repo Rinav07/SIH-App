@@ -35,12 +35,13 @@ class _homepageState extends State<homepage> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Container(
-                  height: 346,
+                  height: 340,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
                         image: const AssetImage('assets/MoR_Piyush_Goyal 1.png'),
+                        fit: BoxFit.fill,
                         colorFilter: ColorFilter.mode(
                             Colors.black.withOpacity(0.5), BlendMode.srcOver)),
                   ),
