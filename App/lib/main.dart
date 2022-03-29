@@ -27,7 +27,7 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
-  late Widget _widgetoption = homepage();
+  late Widget _widgetoption = const homepage();
 
   void _onItemTapped(int index) {
     setState(() {

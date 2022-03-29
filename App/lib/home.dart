@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sihapp/SummaryPage.dart';
 
 // ignore: camel_case_types
 class homepage extends StatefulWidget {
@@ -30,7 +31,9 @@ class _homepageState extends State<homepage> {
               const Text(
                 'Latest Press Releases',
                 style: TextStyle(
-                    fontSize: 40, fontWeight: FontWeight.bold, color: Colors.black),
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
@@ -40,7 +43,8 @@ class _homepageState extends State<homepage> {
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
-                        image: const AssetImage('assets/MoR_Piyush_Goyal 1.png'),
+                        image:
+                            const AssetImage('assets/MoR_Piyush_Goyal 1.png'),
                         fit: BoxFit.fill,
                         colorFilter: ColorFilter.mode(
                             Colors.black.withOpacity(0.5), BlendMode.srcOver)),
@@ -73,34 +77,49 @@ class _homepageState extends State<homepage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 15.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Container(
-
-                                decoration: const BoxDecoration(
-                                  border: Border(bottom: BorderSide(
+                          child: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const SummaryPage()));
+                              });
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Container(
+                                  decoration: const BoxDecoration(
+                                      border: Border(
+                                          bottom: BorderSide(
                                     color: Colors.white,
                                     width: 1.3,
-                                  ))
-                                ),
-                                child: const Text(
-                                  'More Details',
-                                  style: TextStyle(
-                                    // height: 1.5,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 10,
-                                    // decoration: TextDecoration.underline,
-                                    decorationThickness: 2,
-                                    color: Colors.white,
+                                  ))),
+                                  child: const Text(
+                                    'More Details',
+                                    style: TextStyle(
+                                      // height: 1.5,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10,
+                                      // decoration: TextDecoration.underline,
+                                      decorationThickness: 2,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 4.0),
-                                child: Icon(Icons.logout, color: Colors.white,size: 15,),
-                              )
-                            ],
+                                const Padding(
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 4.0),
+                                  child: Icon(
+                                    Icons.logout,
+                                    color: Colors.white,
+                                    size: 15,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         )
                       ],
@@ -121,9 +140,11 @@ class _homepageState extends State<homepage> {
                             height: 86,
                             width: 86,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(6.0),
-                              image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                            ),
+                                borderRadius: BorderRadius.circular(6.0),
+                                image: const DecorationImage(
+                                  image: AssetImage(
+                                      'assets/Screenshot 2022-03-28 223907 1.png'),
+                                )),
                           ),
                         ),
                         Column(
@@ -143,7 +164,6 @@ class _homepageState extends State<homepage> {
                                 ),
                               ),
                             ),
-
                             SizedBox(
                               width: MediaQuery.of(context).size.width * 0.4,
                               child: const Text(
@@ -172,8 +192,10 @@ class _homepageState extends State<homepage> {
                             width: 86,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(6.0),
-                                image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
-                            ),
+                                image: const DecorationImage(
+                                  image:
+                                      AssetImage('assets/coal-india-ltd 2.png'),
+                                )),
                           ),
                         ),
                         Column(
@@ -193,7 +215,6 @@ class _homepageState extends State<homepage> {
                                 ),
                               ),
                             ),
-
                             SizedBox(
                               width: MediaQuery.of(context).size.width * 0.4,
                               child: const Text(
@@ -222,8 +243,10 @@ class _homepageState extends State<homepage> {
                             width: 86,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(6.0),
-                                image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                            ),
+                                image: const DecorationImage(
+                                  image: AssetImage(
+                                      'assets/Screenshot 2022-03-28 223907 1.png'),
+                                )),
                           ),
                         ),
                         Column(
@@ -243,7 +266,6 @@ class _homepageState extends State<homepage> {
                                 ),
                               ),
                             ),
-
                             SizedBox(
                               width: MediaQuery.of(context).size.width * 0.4,
                               child: const Text(
@@ -260,7 +282,6 @@ class _homepageState extends State<homepage> {
                       ],
                     ),
                   ),
-
                 ],
               )
             ],

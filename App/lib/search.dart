@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Searchpage extends StatefulWidget {
   const Searchpage({Key? key}) : super(key: key);
@@ -40,7 +39,7 @@ class _SearchpageState extends State<Searchpage> {
                     height: 50,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15.0),
-                      color: Color(0xfff1f1f1),
+                      color: const Color(0xfff1f1f1),
                     ),
                     child: const Center(
                       child: TextField(
@@ -143,7 +142,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -193,7 +192,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
                                   ),
                                 ),
                               ),
@@ -243,7 +242,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -293,7 +292,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
                                   ),
                                 ),
                               ),
@@ -350,7 +349,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
                                   ),
                                 ),
                               ),
@@ -400,7 +399,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -450,7 +449,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -506,7 +505,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -556,7 +555,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
                                   ),
                                 ),
                               ),
@@ -606,7 +605,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -662,7 +661,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
@@ -712,7 +711,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
                                   ),
                                 ),
                               ),
@@ -762,7 +761,7 @@ class _SearchpageState extends State<Searchpage> {
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
+                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
                                   ),
                                 ),
                               ),
