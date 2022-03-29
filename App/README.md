@@ -4,7 +4,7 @@ With the fast pace of modern life, it is impossible to read long news articles e
 With relation to the above problem, we have come up with the idea of developing an app that on receiving a press release as input, provides 50-60 word short summaries and key highlights of a press release while maintaining the authenticity of the news by providing accurate summarization with several other features mentioned below.
 
 
-##Demo Video
+## Demo Video
 
 https://user-images.githubusercontent.com/77344616/160532411-1f2ef432-0530-410b-bac4-cc0eb309c6ef.mp4
 
