@@ -9,4 +9,7 @@ With relation to the above problem, we have come up with the idea of developing 
 https://user-images.githubusercontent.com/77344616/160532411-1f2ef432-0530-410b-bac4-cc0eb309c6ef.mp4
 
 
+## Design 
+
+![WhatsApp Image 2022-03-29 at 09 52 22](https://user-images.githubusercontent.com/77344616/160532834-fc7bbaa6-b8fb-4046-a984-41aac89c605a.jpeg)
 
