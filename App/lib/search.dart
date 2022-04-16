@@ -61,65 +61,67 @@ class _SearchpageState extends State<Searchpage> {
                       ),
                     ),
                   ),
-                  const TabBar(
-                    indicatorSize: TabBarIndicatorSize.tab,
-                    indicatorColor: Colors.black,
-                    isScrollable: true,
-                    indicatorWeight: 3,
-                    labelColor: Colors.black,
-                    unselectedLabelColor: Color(0xFFBDBDBD),
-                    unselectedLabelStyle:
-                        TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-                    labelStyle: TextStyle(
-                        overflow: TextOverflow.visible,
-                        fontSize: 17,
-                        fontWeight: FontWeight.bold),
-                    tabs: [
-                      SizedBox(
-                        width: 120,
-                        child: Tab(
-                          height: 70,
-                          child: Text(
-                            'Ministry of Coal',
-                            maxLines: 2,
-                            textAlign: TextAlign.center,
+                  const Flexible(
+                    child: TabBar(
+                      indicatorSize: TabBarIndicatorSize.tab,
+                      indicatorColor: Colors.black,
+                      isScrollable: true,
+                      indicatorWeight: 3,
+                      labelColor: Colors.black,
+                      unselectedLabelColor: Color(0xFFBDBDBD),
+                      unselectedLabelStyle:
+                          TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                      labelStyle: TextStyle(
+                          overflow: TextOverflow.visible,
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                      tabs: [
+                        SizedBox(
+                          width: 120,
+                          child: Tab(
+                            height: 70,
+                            child: Text(
+                              'Ministry of Coal',
+                              maxLines: 2,
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 125,
-                        child: Tab(
-                          height: 70,
-                          child: Text(
-                            'Ministry of Communication',
-                            maxLines: 2,
-                            textAlign: TextAlign.center,
+                        SizedBox(
+                          width: 125,
+                          child: Tab(
+                            height: 70,
+                            child: Text(
+                              'Ministry of Communication',
+                              maxLines: 2,
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 120,
-                        child: Tab(
-                          height: 70,
-                          child: Text(
-                            'Ministry of Coal',
-                            maxLines: 2,
-                            textAlign: TextAlign.center,
+                        SizedBox(
+                          width: 120,
+                          child: Tab(
+                            height: 70,
+                            child: Text(
+                              'Ministry of Education',
+                              maxLines: 2,
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        width: 125,
-                        child: Tab(
-                          height: 70,
-                          child: Text(
-                            'Ministry of Communication',
-                            maxLines: 2,
-                            textAlign: TextAlign.center,
+                        SizedBox(
+                          width: 125,
+                          child: Tab(
+                            height: 70,
+                            child: Text(
+                              'Ministry of Finance',
+                              maxLines: 2,
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   )
                 ],
               ),
@@ -136,36 +138,44 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/Screenshot 2022-03-28 223907 1.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
                                       'Coal Centric Indian Economy',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -186,36 +196,43 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/coal-india-ltd 2.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
                                       'Measures Adopted by Coal India Ltd and Substituted',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -236,36 +253,43 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/coal-mine-fires 1.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
-                                      'Coal Centric Indian Economy',
+                                      'Latest Efforts To Reduce Pollution Due to Coal Mining',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -286,193 +310,43 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/03-1030x773-1024x768 2.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
-                                      'Measures Adopted by Coal India Ltd and Substituted',
+                                      'E - Surveillence Methods For Coalfields Operations',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
-                                    child: const Text(
-                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 10,
-                                        color: Color(0xFFBDBDBD),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SingleChildScrollView(
-                    child: Column(
-                      children: [
-
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                                child: Container(
-                                  height: 86,
-                                  width: 86,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
+                                  const SizedBox(
+                                    height: 7,
                                   ),
-                                ),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
-                                    child: const Text(
-                                      'Measures Adopted by Coal India Ltd and Substituted',
-                                      maxLines: 2,
-                                      style: TextStyle(
-                                        overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  ),
-
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
-                                    child: const Text(
-                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 10,
-                                        color: Color(0xFFBDBDBD),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                                child: Container(
-                                  height: 86,
-                                  width: 86,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
-                                ),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
-                                    child: const Text(
-                                      'Coal Centric Indian Economy',
-                                      maxLines: 2,
-                                      style: TextStyle(
-                                        overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  ),
-
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
-                                    child: const Text(
-                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 10,
-                                        color: Color(0xFFBDBDBD),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                                child: Container(
-                                  height: 86,
-                                  width: 86,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
-                                ),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
-                                    child: const Text(
-                                      'Coal Centric Indian Economy',
-                                      maxLines: 2,
-                                      style: TextStyle(
-                                        overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  ),
-
-                                  SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -499,38 +373,47 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.fill,
+                                        image: AssetImage(
+                                            'assets/download.jpg'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
-                                      'Coal Centric Indian Economy',
+                                      'PLI scheme for telecom sector',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
-                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
+                                      'Posted on : 30 MAR 2022 2:30 PM BY PIB DELHI',
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 10,
@@ -549,38 +432,46 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.fill,
+                                        image: AssetImage(
+                                            'assets/download (1).jpg'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
-                                      'Measures Adopted by Coal India Ltd and Substituted',
+                                      'Policy for Mobile Tower Installation',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
-                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
+                                      'Posted on : 30 MAR 2022 2:24 PM BY PIB DELHI',
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 10,
@@ -599,36 +490,341 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.fill,
+                                        image: AssetImage(
+                                            'assets/download (2).jpg'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
-                                      'Coal Centric Indian Economy',
+                                      'Secretary (Telecom) Shri K. Rajaraman releases TEC Report- “Rollout of Small Cells for 5G Networks by leveraging Street Furniture',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 28 MAR 2022 6:39 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                            'assets/images.jpg'),
+                                      )),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
+                                    child: const Text(
+                                      'Discussions For Giving Final Shape To 5g Spectrum Auction',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 25 MAR 2022 5:18 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                            'assets/images (1).jpg'),
+                                      )),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
+                                    child: const Text(
+                                      'Reforms in education system',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 30 MAR 2022 3:31 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                            'assets/download (3).jpg'),
+                                      )),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
+                                    child: const Text(
+                                      'Improving the research ecosystem',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 30 MAR 2022 3:29 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                            'assets/images (2).jpg'),
+                                      )),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
+                                    child: const Text(
+                                      'Steps taken to encourage Yoga Education course',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 30 MAR 2022 3:32 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                            'assets/download (4).jpg'),
+                                      )),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
+                                    child: const Text(
+                                      'Education Minister Dharmendra Pradhan inaugurates New Hostel of IIT Bombay',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -655,36 +851,44 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/Screenshot 2022-03-28 223907 1.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
                                       'Coal Centric Indian Economy',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -705,36 +909,43 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/coal-india-ltd 2.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/coal-india-ltd 2.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
                                       'Measures Adopted by Coal India Ltd and Substituted',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(
@@ -755,36 +966,100 @@ class _SearchpageState extends State<Searchpage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
                                 child: Container(
                                   height: 86,
                                   width: 86,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(6.0),
-                                      image: const DecorationImage(image: AssetImage('assets/Screenshot 2022-03-28 223907 1.png'),)
-                                  ),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/coal-mine-fires 1.png'),
+                                      )),
                                 ),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.5,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
                                     child: const Text(
-                                      'Coal Centric Indian Economy',
+                                      'Latest Efforts To Reduce Pollution Due to Coal Mining',
                                       maxLines: 2,
                                       style: TextStyle(
                                         overflow: TextOverflow.ellipsis,
-                                        height: 1.5,
+                                        height: 1.0,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
                                         color: Colors.black,
                                       ),
                                     ),
                                   ),
-
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
                                   SizedBox(
-                                    width: MediaQuery.of(context).size.width * 0.4,
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
+                                    child: const Text(
+                                      'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 10,
+                                        color: Color(0xFFBDBDBD),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 19.0),
+                                child: Container(
+                                  height: 86,
+                                  width: 86,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(6.0),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            'assets/03-1030x773-1024x768 2.png'),
+                                      )),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    width: MediaQuery.of(context).size.width *
+                                        0.56,
+                                    child: const Text(
+                                      'E - Surveillence Methods For Coalfields Operations',
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        overflow: TextOverflow.ellipsis,
+                                        height: 1.0,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 7,
+                                  ),
+                                  SizedBox(
+                                    width:
+                                    MediaQuery.of(context).size.width * 0.4,
                                     child: const Text(
                                       'Posted on : 28 MAR 2022 5:18 PM BY PIB DELHI',
                                       style: TextStyle(

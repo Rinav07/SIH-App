@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sihapp">
    <application
-        android:label="sihapp"
+        android:label="SumUp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

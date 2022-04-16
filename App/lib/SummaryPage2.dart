@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SummaryPage extends StatefulWidget {
-  const SummaryPage({Key? key}) : super(key: key);
+class SummaryPage2 extends StatefulWidget {
+  const SummaryPage2({Key? key}) : super(key: key);
 
   @override
-  State<SummaryPage> createState() => _SummaryPageState();
+  State<SummaryPage2> createState() => _SummaryPage2State();
 }
 
-class _SummaryPageState extends State<SummaryPage> {
+class _SummaryPage2State extends State<SummaryPage2> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -43,7 +43,7 @@ class _SummaryPageState extends State<SummaryPage> {
                     bottomRight: Radius.circular(20.0)),
                 image: DecorationImage(
                     image: const AssetImage(
-                        'assets/Screenshot 2022-03-28 223907 1 (1).png'),
+                        'assets/MoR_Piyush_Goyal 1.png'),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
                         Colors.black.withOpacity(0.5), BlendMode.srcOver)),
@@ -58,32 +58,29 @@ class _SummaryPageState extends State<SummaryPage> {
                       height: 20,
                     ),
                     Container(
-                      height: 35,
-                      width: 160,
+                      height: 40,
+                      width: 200,
                       decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.3),
                           borderRadius: BorderRadius.circular(6.0)),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 5.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
-                            Text(
-                              'Ministry of Coal',
-                              maxLines: 2,
-                              style: TextStyle(
-                                wordSpacing: 3,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                  color: Colors.white),
-                            ),
-                          ],
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 5.0),
+                        child: SizedBox(
+                          width: 1,
+                          child: Text(
+                            'Ministry of Commerce & Industry',
+                            maxLines: 2,
+                            style: TextStyle(
+                              wordSpacing: 3,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                                color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
                     const Text(
-                      'Coal Centric Indian Economy',
+                      'Shri Piyush Goyal Calls for practical funding program',
                       style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
